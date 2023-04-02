@@ -48,12 +48,12 @@
                                         </connections>
                                     </slider>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="20v-g5-Deo">
-                                        <rect key="frame" x="108.00000000000001" y="305" width="184.33333333333337" height="34"/>
+                                        <rect key="frame" x="108" y="305" width="185" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVO-K1-xj3">
-                                        <rect key="frame" x="168" y="389" width="64.333333333333314" height="35"/>
+                                        <rect key="frame" x="168" y="389" width="65" height="35"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="nus-Ll-mqM"/>
@@ -65,13 +65,24 @@
                                             <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wu-2a-TvF"/>
                                         </connections>
                                     </button>
+                                    <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="6ki-2B-3iF">
+                                        <rect key="frame" x="0.0" y="479" width="401" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="6Ah-7D-dU7"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="changeDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="eBF-75-9ZW"/>
+                                        </connections>
+                                    </datePicker>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Pw2-Lf-nPY" firstAttribute="top" secondItem="8wP-Vf-dvM" secondAttribute="bottom" constant="98" id="0gO-MN-Pfg"/>
+                                    <constraint firstItem="6ki-2B-3iF" firstAttribute="top" secondItem="DVO-K1-xj3" secondAttribute="bottom" constant="55" id="3rF-6z-JJ5"/>
                                     <constraint firstItem="DVO-K1-xj3" firstAttribute="top" secondItem="20v-g5-Deo" secondAttribute="bottom" constant="50" id="9hX-uL-Xg3"/>
                                     <constraint firstItem="MwM-nu-7uK" firstAttribute="top" secondItem="Pw2-Lf-nPY" secondAttribute="bottom" constant="50" id="Aol-Ap-QXG"/>
+                                    <constraint firstItem="6ki-2B-3iF" firstAttribute="leading" secondItem="szw-VC-8nw" secondAttribute="leading" id="F8m-nj-W7e"/>
                                     <constraint firstItem="Pw2-Lf-nPY" firstAttribute="leading" secondItem="szw-VC-8nw" secondAttribute="leading" constant="42" id="Iep-mv-Eru"/>
-                                    <constraint firstAttribute="bottom" secondItem="DVO-K1-xj3" secondAttribute="bottom" constant="400" id="Nhc-cz-tth"/>
+                                    <constraint firstItem="6ki-2B-3iF" firstAttribute="centerX" secondItem="DVO-K1-xj3" secondAttribute="centerX" id="OtQ-sX-jZc"/>
                                     <constraint firstItem="8wP-Vf-dvM" firstAttribute="top" secondItem="szw-VC-8nw" secondAttribute="top" constant="20" id="Vae-Fk-t5M"/>
                                     <constraint firstItem="Pw2-Lf-nPY" firstAttribute="centerX" secondItem="akW-aa-Ydm" secondAttribute="centerX" id="WG0-6h-ouh"/>
                                     <constraint firstItem="20v-g5-Deo" firstAttribute="centerX" secondItem="DVO-K1-xj3" secondAttribute="centerX" constant="2.8421709430404007e-14" id="ZB9-tS-VPR"/>
@@ -82,6 +93,8 @@
                                     <constraint firstItem="DVO-K1-xj3" firstAttribute="leading" secondItem="szw-VC-8nw" secondAttribute="leading" constant="168" id="n4D-5L-a6P"/>
                                     <constraint firstItem="MwM-nu-7uK" firstAttribute="leading" secondItem="20v-g5-Deo" secondAttribute="leading" constant="-64" id="rrL-or-gGV"/>
                                     <constraint firstAttribute="trailing" secondItem="8wP-Vf-dvM" secondAttribute="trailing" constant="135" id="w84-Da-jaa"/>
+                                    <constraint firstItem="6ki-2B-3iF" firstAttribute="trailing" secondItem="szw-VC-8nw" secondAttribute="trailing" id="yH8-bY-Cuf"/>
+                                    <constraint firstAttribute="bottom" secondItem="6ki-2B-3iF" secondAttribute="bottom" constant="105" id="yck-1Y-g3z"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Rll-Ey-OxJ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="szw-VC-8nw"/>
@@ -98,6 +111,7 @@
                     </view>
                     <size key="freeformSize" width="393" height="900"/>
                     <connections>
+                        <outlet property="datePicker" destination="6ki-2B-3iF" id="4Qg-if-Inr"/>
                         <outlet property="label" destination="Pw2-Lf-nPY" id="k1g-JE-E9c"/>
                         <outlet property="segmentConrol" destination="8wP-Vf-dvM" id="wbI-It-YcG"/>
                         <outlet property="slider" destination="MwM-nu-7uK" id="XJN-Ge-J4A"/>
