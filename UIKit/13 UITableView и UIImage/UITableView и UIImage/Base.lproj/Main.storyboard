@@ -48,16 +48,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-06-W4i">
-                                <rect key="frame" x="9" y="64" width="300" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EPo-06-W4i">
+                                <rect key="frame" x="9" y="103" width="300" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="aDg-of-yhO"/>
                                     <constraint firstAttribute="height" constant="375" id="u1Z-UL-eXg"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="vvQ-AM-8Qa"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsP-yW-9Zh">
-                                <rect key="frame" x="12" y="455" width="300" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsP-yW-9Zh">
+                                <rect key="frame" x="12" y="494" width="405" height="101"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,13 +65,13 @@
                         <viewLayoutGuide key="safeArea" id="TPb-UV-vLC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TPb-UV-vLC" firstAttribute="trailing" secondItem="EPo-06-W4i" secondAttribute="trailing" constant="121" id="Et8-rf-kaq"/>
                             <constraint firstItem="PsP-yW-9Zh" firstAttribute="top" secondItem="EPo-06-W4i" secondAttribute="bottom" constant="16" id="MEZ-hL-M1P"/>
+                            <constraint firstItem="EPo-06-W4i" firstAttribute="leading" secondItem="TPb-UV-vLC" secondAttribute="leading" constant="9" id="Uuq-1i-y6m"/>
                             <constraint firstItem="TPb-UV-vLC" firstAttribute="trailing" secondItem="PsP-yW-9Zh" secondAttribute="trailing" constant="13" id="WZq-bC-Lod"/>
-                            <constraint firstItem="EPo-06-W4i" firstAttribute="leading" secondItem="TPb-UV-vLC" secondAttribute="leading" constant="9" id="aXU-ga-F9Y"/>
                             <constraint firstItem="TPb-UV-vLC" firstAttribute="bottom" secondItem="PsP-yW-9Zh" secondAttribute="bottom" constant="303" id="dGW-sf-PTd"/>
                             <constraint firstItem="EPo-06-W4i" firstAttribute="top" secondItem="TPb-UV-vLC" secondAttribute="top" id="dVM-ug-u28"/>
                             <constraint firstItem="EPo-06-W4i" firstAttribute="top" secondItem="TPb-UV-vLC" secondAttribute="top" id="mMj-ph-qFJ"/>
-                            <constraint firstItem="TPb-UV-vLC" firstAttribute="trailing" secondItem="EPo-06-W4i" secondAttribute="trailing" constant="121" id="xPL-IQ-4b5"/>
                             <constraint firstItem="PsP-yW-9Zh" firstAttribute="leading" secondItem="TPb-UV-vLC" secondAttribute="leading" constant="12" id="y1b-0t-TAh"/>
                         </constraints>
                     </view>
